@@ -1,0 +1,4 @@
+run
+go to swim
+sopping
+watch TV
