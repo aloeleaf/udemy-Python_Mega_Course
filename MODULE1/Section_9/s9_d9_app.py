@@ -6,7 +6,7 @@ while True:
     user_action = user_action.strip().lower()
 
     if "add" in user_action:
-        todo = user_action[4:]
+        todo = user_action[4:] + '\n'
 
         with open(r"todos.txt", "r") as file:
             todos = file.readlines()
@@ -16,7 +16,7 @@ while True:
         with open("todos.txt", "w") as file:
             file.writelines(todos)
 
-    if "show" in user_action:
+    elif "show" in user_action:
         with open("todos.txt", "r") as file:
             todos = file.readlines()
 
@@ -25,7 +25,7 @@ while True:
             row = f"{index + 1}-{todo}"
             print(row)
 
-    if "edit" in user_action:
+    elif "edit" in user_action:
         number = int(input("Enter the number of the todo to edit: "))
         number = number - 1
 
@@ -38,7 +38,7 @@ while True:
         with open("todos.txt", "w") as file:
             file.writelines(todos)
 
-    if "complete" in user_action:
+    elif "complete" in user_action:
         number = int(input("Enter the number of the todo to complete: "))
         with open("todos.txt", "r") as file:
             todos = file.readlines()
@@ -53,7 +53,11 @@ while True:
         message = f"Todo number {todo_to_remove} was removed from the list."
         print(message)
 
-    if "exit" in user_action:
+    elif "exit" in user_action:
         break
+
+    else:
+        print("Invalid action. Please try again.")
+
 
 print("Bye!")
