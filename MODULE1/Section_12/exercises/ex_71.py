@@ -28,6 +28,4 @@ def strength(password):
         return "Weak Password"
 
 
-my_password = "9wlVKwq1"
-print(strength(my_password))
 
