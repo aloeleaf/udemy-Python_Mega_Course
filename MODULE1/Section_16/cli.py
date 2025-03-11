@@ -1,8 +1,15 @@
 from modules import functions
 import time
 
+text = """
+Principles of productivity:
+Managing your inflow.
+Systemizing everything that repeats.
+""" 
+
 now = time.strftime("%Y-%m-%d %H:%M:%S")
 print(f'It is : {now}')
+
 
 
 while True:
