@@ -7,7 +7,7 @@ add_button = fsg.Button("Add", tooltip="Add todo")
 
 
 window = fsg.Window(title="My To-Do App",
-                    layout=[[label], [input_box, add_button]]
+                    layout=[[label], [input_box], [add_button]]
                     )
 
 window.read()
