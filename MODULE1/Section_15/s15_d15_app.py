@@ -1,6 +1,7 @@
 #from functions import get_todos, write_todos
 #import functions
 from modules import functions
+import time
 
 text = """
 Principles of productivity:
@@ -8,7 +9,8 @@ Managing your inflow.
 Systemizing everything that repeats.
 """ 
 
-print(text)
+now = time.strftime("%Y-%m-%d %H:%M:%S")
+print(f'It is : {now}')
 
 
 

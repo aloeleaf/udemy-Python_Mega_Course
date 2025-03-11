@@ -1,17 +1,6 @@
-# import glob
-# import time
+FILEPATH = "todos.txt"
 
-# myfiles = glob.glob("*.txt")
-# print(myfiles)
-
-# FILEPATH = "todos.txt"
-
-
-# def list_files():
-#     files = glob.glob("*.txt")
-#     return files
-
-def get_todos(filepath="todos.txt"):
+def get_todos(filepath=FILEPATH):
     """
     Reads a text file and return the list  of
     to-do items.
@@ -21,7 +10,7 @@ def get_todos(filepath="todos.txt"):
     return todos_local
 
 
-def write_todos(todos_local, filepath="todos.txt"):
+def write_todos(todos_local, filepath=FILEPATH):
     """Writes the to-do items list in the text file."""
     with open(filepath, "w") as file_local:
         file_local.writelines(todos_local)
