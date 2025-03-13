@@ -10,12 +10,12 @@ list_box = fsg.Listbox(values=functions.get_todos(),
                        size=[45, 10])
 edit_button = fsg.Button("Edit", tooltip="Edit todo")
 
-complate_button = fsg.Button("Complete", tooltip="Complete todo")
+complete_button = fsg.Button("Complete", tooltip="Complete todo")
 
 
 window = fsg.Window(title="My To-Do App",
-                    layout=[[label],[input_box, add_button], [list_box, edit_button]],
-                    font=('Helvetica', 18)
+                    layout=[[label],[input_box, add_button], [list_box, edit_button, complete_button]],
+                    font=('Helvetica', 16)
                     )
 
 
