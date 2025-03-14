@@ -2,6 +2,8 @@ from modules import functions
 import FreeSimpleGUI as fsg
 import time
 
+fsg.theme('Black')
+
 clock  = fsg.Text('', key='clock', font=('Helvetica', 18))
 label = fsg.Text("Type in a to-do")
 input_box = fsg.InputText(tooltip="Enter todo", key="todo")
@@ -36,9 +38,12 @@ while True:
         case "Add":
             todos = functions.get_todos()
             new_todo = values["todo"] + "\n"
-            todos.append(new_todo)
-            functions.write_todos(todos)
-            window["todos"].update(values=todos)
+            if not new_todo.isspace():
+                todos.append(new_todo)
+                functions.write_todos(todos)
+                window["todos"].update(values=todos)
+            else:
+                fsg.popup("Please enter a todo", font=('Helvetica', 18))
         case "Edit":
             try:
                 todo_to_edit = values['todos'][0]
