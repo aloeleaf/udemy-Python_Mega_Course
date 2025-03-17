@@ -1,0 +1,13 @@
+To complile python file use pyinstaller
+
+1.) step 1
+- on windows check and set execution policy use the next commands:
+-  get-executionpolicy -list # to view current policy
+-  set-executionpolicy remotesigned -scope currentuser # set policy
+# set-executionpolicy remotesigned -scope currentuser
+
+2.) step 2
+- install complier
+# py.exe -m pip install pyinstaller
+- --onefile one single executeable file, --windowed use gui, --clea clear previusly cretaed compleier generated data 
+# pyinstaller --onefile --windowed --clean .\gui.py

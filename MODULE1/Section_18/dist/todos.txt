@@ -1,0 +1,4 @@
+clean
+go to shop
+go to cinema
+wash
