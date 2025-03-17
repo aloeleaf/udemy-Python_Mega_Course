@@ -2,3 +2,6 @@ go to shop
 shop
 have shower
 clean room
+clean kitchen
+go to run
+Do the laundry
