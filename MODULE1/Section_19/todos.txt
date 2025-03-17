@@ -1,0 +1,4 @@
+go to shop
+shop
+have shower
+clean room
