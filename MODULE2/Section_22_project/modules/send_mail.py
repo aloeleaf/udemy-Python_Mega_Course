@@ -2,20 +2,6 @@ import smtplib
 import ssl
 
 
-def send_mail_smtp(message):
-    host = ""
-    port = 25
-
-    username = ""
-    password = ""
-
-    receiver = ""
-
-    with smtplib.SMTP(host, port) as server:
-        server.login(username, password)
-        server.sendmail(username, receiver, message)
-
-
 def send_mail_smtp_ssl(message):
     host = ""
     port = 465
