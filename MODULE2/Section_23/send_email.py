@@ -5,13 +5,13 @@ def send_mail(message):
     port = 25  
 
 
-    # username = "szabolcs.sandor@gmail.com"
-    # password = "bdwnhqycxpaiihdj"
+    # username = ""
+    # password = ""
 
-    username = "helpdesk"
-    password = "gj/29BF37."
+    username = ""
+    password = ""
 
-    receiver = "sandorsz@birosag.hu"
+    receiver = ""
     #context = ssl.create_default_context()
 
 
